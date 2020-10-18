@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="483.0" prefWidth="728.0">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="145.0" prefWidth="730.0">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="46.0" layoutX="677.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/menu.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Menu" layoutX="676.0" layoutY="40.0" mnemonicParsing="false" onAction="#AddCancel" opacity="0.0" prefHeight="46.0" prefWidth="51.0" text="Menu" />
+                  <Label fx:id="LabelEnWord" alignment="CENTER" layoutX="39.0" layoutY="-4.0" onInputMethodTextChanged="#Submit" onKeyPressed="#keyPressLookUp" prefHeight="90.0" prefWidth="517.0" textFill="#d01e1e">
+                     <font>
+                        <Font size="55.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="EnParagraph" alignment="CENTER" layoutX="3.0" layoutY="40.0" onKeyPressed="#keyPressTranslate" prefHeight="175.0" prefWidth="667.0" promptText="Nhâp đoạn văn bạn cần dịch">
+                     <font>
+                        <Font name="Serif Regular" size="16.0" />
+                     </font></TextField>
+                  <Button fx:id="SubmitButtonTranslate" layoutX="675.0" layoutY="95.0" mnemonicParsing="false" onAction="#TranslateButton" prefHeight="48.0" prefWidth="52.0" text="Dịch" />
+                  <Button fx:id="ButtonLoa2" layoutX="616.0" layoutY="169.0" mnemonicParsing="false" onAction="#SoundOn2" prefHeight="25.0" prefWidth="48.0" styleClass="ButtonLoa2">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/buttonsound.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="671.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/convert.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="674.0" layoutY="152.0" mnemonicParsing="false" onAction="#ConvertLanguage" opacity="0.0" prefHeight="59.0" prefWidth="52.0" text="convert" />
+                  <Label fx:id="EnLabel" alignment="CENTER" layoutX="4.0" layoutY="41.0" prefHeight="30.0" prefWidth="80.0" styleClass="English" text="English">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="220.0" prefHeight="265.0" prefWidth="730.0">
+               <children>
+                  <Separator layoutY="-1.0" prefHeight="0.0" prefWidth="730.0" />
+                  <Label fx:id="VnParagraph" alignment="CENTER" layoutX="3.0" layoutY="1.0" prefHeight="263.0" prefWidth="724.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="VnLabel" alignment="CENTER" layoutX="4.0" layoutY="2.0" prefHeight="30.0" prefWidth="80.0" styleClass="English" text="Tiếng việt">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ButtonLoaDuoi" layoutX="673.0" layoutY="217.0" mnemonicParsing="false" onAction="#SoundOn3" prefHeight="25.0" prefWidth="48.0" styleClass="ButtonLoa2">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" styleClass="ButtonLoa2">
+                           <image>
+                              <Image url="@image/buttonsound.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="27.0" prefWidth="742.0">
+               <children>
+                  <Label fx:id="LabelDichDoanVan" alignment="CENTER" prefHeight="37.0" prefWidth="742.0" text="DỊCH ĐOẠN VĂN" textFill="#170202" />
+                  <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="266.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/translate.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>

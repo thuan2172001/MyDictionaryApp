@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="483.0" text="Change word's meanings" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <content>
+      <DialogPane prefHeight="173.0" prefWidth="481.0">
+         <header>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="481.0">
+               <children>
+                  <TextField fx:id="enWordChange" layoutX="116.0" layoutY="77.0" prefHeight="30.0" prefWidth="338.0" promptText="Từ tiếng anh">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="vnWordChange" layoutX="116.0" layoutY="118.0" prefHeight="30.0" prefWidth="338.0" promptText="Nghĩa mới của từ">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font></TextField>
+                  <Label layoutX="15.0" layoutY="76.0" prefHeight="31.0" prefWidth="125.0" text="Từ cần sửa">
+                     <font>
+                        <Font name="Serif Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="117.0" prefHeight="31.0" prefWidth="120.0" text="Nghĩa mới">
+                     <font>
+                        <Font name="Serif Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="147.0" layoutY="21.0" prefHeight="41.0" prefWidth="245.0" text="CHANGE A WORD">
+                     <font>
+                        <Font name="Serif Regular" size="23.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="126.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/fix.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="340.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/ok.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="387.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/cancel.png" />
+                     </image>
+                  </ImageView>
+                  <Button defaultButton="true" layoutX="340.0" layoutY="170.0" mnemonicParsing="false" onAction="#OkChange" opacity="0.0" prefHeight="29.0" prefWidth="32.0" text="Ok" />
+                  <Button layoutX="387.0" layoutY="169.0" mnemonicParsing="false" onAction="#AddCancel" opacity="0.0" prefHeight="31.0" prefWidth="28.0" text="Cancel" />
+               </children>
+            </AnchorPane>
+         </header>
+      </DialogPane>
+   </content>
+</TitledPane>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane layoutX="-1.0" prefHeight="574.0" prefWidth="601.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints fx:id="Row1" maxHeight="148.0" minHeight="50.0" prefHeight="148.0" />
+            <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="0.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="20.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="20.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="20.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="8.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="20.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="20.0" prefHeight="35.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox prefHeight="92.0" prefWidth="600.0" styleClass="VBOX1">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logodic1.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="30.0" prefWidth="597.0">
+                     <children>
+                        <TextField fx:id="EnWord" maxHeight="70.0" maxWidth="555.0" onKeyPressed="#keyPressLookUp" prefHeight="35.0" prefWidth="533.0" promptText="Nhập từ tiếng anh bạn cần tra">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <AnchorPane prefHeight="43.0" prefWidth="47.0">
+                           <children>
+                              <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="-33.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/more.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="-36.0" layoutY="10.0" mnemonicParsing="false" onAction="#mouseclick" opacity="0.0" prefHeight="35.0" prefWidth="35.0" text="Button" />
+                              <ImageView fitHeight="36.0" fitWidth="61.0" layoutX="1.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/search4.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="SubmitButton" layoutX="1.0" layoutY="10.0" mnemonicParsing="false" onAction="#Submit" opacity="0.0" prefHeight="35.0" prefWidth="36.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <AnchorPane prefHeight="0.0" prefWidth="550.0" />
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#ShowWord" prefHeight="25.0" prefWidth="564.0" styleClass="buttonUI" text="Từ điển của bạn" textFill="#171717" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/dictionary.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#About" prefHeight="0.0" prefWidth="564.0" styleClass="buttonUI" text="Chi tiết ứng dụng" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/information.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button accessibleRole="PARENT" mnemonicParsing="false" onAction="#TranslateFunc" prefHeight="25.0" prefWidth="564.0" styleClass="buttonUI" text="Dịch đoạn văn" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/paragraph.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AddAWord" prefHeight="25.0" prefWidth="564.0" styleClass="buttonUI" text="Thêm từ mới" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DeleteFunction" prefHeight="25.0" prefWidth="564.0" styleClass="buttonUI" text="Xóa từ trong từ điển" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView cache="true" fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ChangeFunction" prefHeight="25.0" prefWidth="564.0" styleClass="buttonUI" text="Sửa từ trong từ điển" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/fix.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane prefHeight="21.0" prefWidth="601.0" GridPane.rowIndex="8">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="17.0" prefWidth="600.0" text="  Version 2.3" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
