@@ -1,0 +1,42 @@
+#LabelDichDoanVan {
+    -fx-border-color:darkorange;
+    -fx-border-width:3;
+    -fx-background-color: greenyellow;
+    -fx-font-family: Serif;
+    -fx-font-size:17;
+
+}
+
+#EnParagraph {
+    -fx-border-color: aqua;
+    -fx-border-width: 2;
+}
+
+
+#VnParagraph {
+    -fx-border-color: aqua;
+    -fx-border-width: 2;
+}
+
+#Menu {
+    -fx-border-color: aqua;
+    -fx-border-width: 2;
+}
+
+#SubmitButtonTranslate {
+    -fx-border-color: aqua;
+    -fx-border-width: 2;
+}
+
+.ButtonLoa2 {
+    -fx-background-color: white;
+    -fx-border-color: aqua;
+    -fx-border-width: 2;
+}
+
+.English {
+    -fx-background-color: white;
+    -fx-border-color: orangered;
+    -fx-border-width: 2;
+}
+
